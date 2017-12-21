@@ -1,0 +1,15 @@
+<%= form_for(@user) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: "Username" %>
+  <%=f.password_field :password, placeholder: "Password" %>
+  <%=f.password_field :password_confirmation, placeholder: "Confirm" %>
+  <%= f.label :happiness %>
+  <%= f.number_field :happiness, placeholder: "Happiness" %>
+  <%= f.label :tickets %>
+  <%= f.number_field :tickets, placeholder: "Tickets" %>
+  <%= f.label :height %>
+  <%= f.number_field :height, placeholder: "Height" %>
+  <%= f.label :admin %>
+  <%= f.check_box :admin %>
+  <%= f.submit %>
+<% end %>
