@@ -1,9 +1,10 @@
 
 
-<br><%= @user.name %>
-<br><%= @user.tickets %>
-<br><%= @user.mood %>
-<br><%= @user.height %> inches
-
-<%= link_to "Edit User", edit_user_path %>
-<%= link_to "See Attractions", attractions_path %>
+<br>Name: <%= @user.name %>
+<br>Tickets: <%= @user.tickets %>
+<br>Mood: <%= @user.mood %>
+<br>Height: <%= @user.height %> inches
+<div>
+<br><%= link_to "Edit User", edit_user_path %>
+<br><%= link_to "See Attractions", attractions_path %>
+</div>

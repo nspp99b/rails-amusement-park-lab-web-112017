@@ -25,11 +25,11 @@
 
   </tbody>
 </table> -->
-<%if flash[:msg] exists %>
+<%if flash[:msg] %>
   <%= flash[:msg] %>
 <% end %>
 
 <%= render "standard_index" %>
-<%= if @user.admin %>
+<% if @user.admin %>
   <%=link_to "Create a new attraction!", new_attraction_path %>
 <% end %>
