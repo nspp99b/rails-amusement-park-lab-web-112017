@@ -33,13 +33,13 @@ class AttractionsController < ApplicationController
 
   def edit
     @attraction = Attraction.find(params[:id])
-    @user = current_user
-    if @user.admin
-      @attraction = Attraction.new
-    else
-      flash[:msg] = "Not Authorized"
-      redirect_to attractions_path
-    end
+    # @user = current_user
+    # if @user.admin
+    #   @attraction = Attraction.new
+    # else
+    #   flash[:msg] = "Not Authorized"
+    #   redirect_to attractions_path
+    # end
   end
 
   def update

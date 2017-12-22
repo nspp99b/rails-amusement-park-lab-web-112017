@@ -1,22 +1,19 @@
-
-
-
 <%= form_for @attraction do |f| %>
-<%= f.label :name %>
-<%= f.text_field :name %>
+<br><%= f.label :name %>
+<%= f.text_field :name, placeholder: "Name" %>
 
-<%= f.label :tickets %>
-<%= f.number_field :tickets %>
+<br><%= f.label :tickets %>
+<%= f.number_field :tickets, placeholder: "Tickets" %>
 
-<%= f.label :nausea_rating %>
-<%= f.number_field :nausea_rating%>
+<br><%= f.label :nausea_rating %>
+<%= f.number_field :nausea_rating, placeholder: "Nausea Rating"%>
 
-<%= f.label :happiness_rating %>
-<%= f.number_field :happiness_rating %>
+<br><%= f.label :happiness_rating %>
+<%= f.number_field :happiness_rating, placeholder: "Happiness Rating" %>
 
-<%= f.label :min_height %>
-<%= f.number_field :min_height %>
+<br><%= f.label :min_height %>
+<%= f.number_field :min_height, placeholder: "Min Height" %>
 
-<%= f.submit %>
+<br><%= f.submit %>
 
 <% end %>
