@@ -2,6 +2,10 @@
 <%= "ADMIN" %>
 <% end %>
 
+<% if flash[:msg] %>
+  <%= flash[:msg] %>
+<% end %>
+
 <br>Name: <%= @user.name %>
 <br>Tickets: <%= @user.tickets %>
 <br>Mood: <%= @user.mood %>
